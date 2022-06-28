@@ -10,7 +10,7 @@
 void print_diagonal(int n)
 {
 	int cant;
-       int vec;
+	int vec;
 
 	for (cant = 1; cant <= n; cant++)
 	{
