@@ -15,8 +15,10 @@ void print_square(int size)
 	for (cant = 0; cant < size; cant++)
 	{
 	for (vec = 0; vec < size; vec++)
+	{
 		putchar('#');
 		putchar('\n');
+	}
 	}
 	if (size < 1)
 	putchar('\n');
