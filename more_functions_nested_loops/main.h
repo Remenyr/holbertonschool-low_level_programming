@@ -13,5 +13,6 @@ void print_square(int size);
 void print_triangle(int size);
 void print_alphabet(void);
 void print_numbers(void);
+void print_square(int size);
 
 #endif
