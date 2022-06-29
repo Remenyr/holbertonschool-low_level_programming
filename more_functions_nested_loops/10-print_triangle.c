@@ -10,18 +10,23 @@
 
 void print_triangle(int size)
 {
-	int x;
-	int y;
+	int a = 0, j, n = size - 1;
 
-	for (x = 1; x <= size; x++)
+	if (size > 0)
 	{
-		for (y = 1; y <= size; y++)
+		for (; a < size; a++)
 		{
-			if (y <= size - x)
-				putchar(' ');
-			else
-				putchar('#');
+			for (j = 0; j < size; j++)
+			{
+				if (j < n)
+					putchar(' ');
+				else
+					putchar('#');
+			}
+			n--;
+			putchar('\n');
 		}
-		putchar('\n');
 	}
+	else
+		putchar('\n');
 }
