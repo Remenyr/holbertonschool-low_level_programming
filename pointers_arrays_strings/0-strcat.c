@@ -1,26 +1,22 @@
 #include "main.h"
 
 /**
- *_strcat - check the code for Holberton School students.
- *@dest: destination
- *@src: source
- * Return: pointer to the destination
+ * _strcat - Concatenate strings
+ * @a: variable
+ * @b: variable
+ * Return: 0
  */
-char *_strcat(char *dest, char *src)
-{
-	int i, j;
 
-	i = 0;
-	while (dest[i] != '\0')
-	{
-		i++;
-	}
-	j = 0;
-	while (src[j] != '\0')
-	{
-		dest[i] = src[j];
-		i++;
-		j++;
-	}
-	return (dest);
+char *_strcat(char *a, char *b)
+{
+	char *c = a;
+
+	while (*a)
+		a++;
+
+	while (*b)
+		*a++ = *b++;
+
+	*a = '\0';
+	return (c);
 }
