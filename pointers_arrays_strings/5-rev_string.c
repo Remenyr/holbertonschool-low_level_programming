@@ -1,20 +1,23 @@
 #include "main.h"
 
 /**
- * string_toupper - change lowercase letters of a string
- * @s: variable
+ * rev_string - reverse a string
+ * @s: string
  * Return: 0
  */
 
-char *string_toupper(char *s)
+void rev_string(char *s)
 {
-	char *start = s;
+	int len = 0, i = 0;
+	char aux;
 
-	while (*s)
-	{
-	if (*s >= 'a' && *s <= 'z')
-	*s -= 32;
-	s++;
-	}
-	return (start);
+	while (s[len] != '\0')
+			len++;
+
+	while (i < len--)
+		{
+		aux = s[i];
+		s[i++] = s[len];
+		s[len] = aux;
+		}
 }
