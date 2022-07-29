@@ -1,10 +1,9 @@
-#include "lists.h"
+#include<stdio.h>
 
 /**
- * constructorRun - runs
- *  before main function is executed.
- */
-void constructorRun(void)
+ * _100first - Prints a message before main function
+ **/
+void __attribute__ ((constructor)) _100first(void)
 {
 	printf("You're beat! and yet, you must allow,\n"
 			"I bore my house upon my back!\n");
