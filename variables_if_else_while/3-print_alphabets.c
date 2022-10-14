@@ -1,20 +1,32 @@
 #include <stdio.h>
+
 /**
- *main - it prints the alphabet in upercse and lowercase.
- *Return: 0
+ *main - Entry point
+ *Return: Always 0 (Success)
  */
 
 int main(void)
 {
-	char alp;
-	for (alp = 'a'; alp <= 'z'; alp++)
+	char Ch = 'A';
+	char ch = 'a';
+
+	while (ch <= 'z')
+
+
 	{
-		putchar(alp);
+		putchar(ch);
+		ch++;
 	}
-	for (alp = 'A'; alp <= 'Z'; alp++)
+
+	while (Ch <= 'Z')
+
+
 	{
-		putchar(alp);
+		putchar(Ch);
+		Ch++;
 	}
+
 	putchar('\n');
+
 	return (0);
 }
