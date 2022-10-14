@@ -1,19 +1,21 @@
 #include <stdio.h>
+
 /**
- *main - it prints the alphabet in lowercase without a letter.
- *Return: 0
- */
+ * main - entry point
+ *
+ * Return: Always 0 (Success)
+ **/
+
 int main(void)
 {
-	char alp;
-	alp = 'a';
-	while (alp <= 'z')
+	int abc;
+
+	for (abc = 'a'; abc <= 'z'; abc++)
 	{
-		if (alp != 'e' && alp != 'q')
+		if ((abc != 'e') && (abc != 'q'))
 		{
-			putchar(alp);
+			putchar(abc);
 		}
-		alp++;
 	}
 	putchar('\n');
 	return (0);
