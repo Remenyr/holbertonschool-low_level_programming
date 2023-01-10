@@ -38,7 +38,7 @@ int linear_search(int *array, size_t size, int value)
 }
 
 /**
- /**
+  *
   * print_array - prints an array
   * @array: array to print
   * @start: index where array starts
